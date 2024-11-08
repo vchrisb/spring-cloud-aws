@@ -35,6 +35,7 @@
 		<spring-modulith.version>1.2.3</spring-modulith.version>
 		<wiremock-standalone.version>3.3.1</wiremock-standalone.version>
 		<amazon.s3.accessgrants>2.3.0</amazon.s3.accessgrants>
+		<aws-crt.version>0.33.0</aws-crt.version>
 	</properties>
 
 	<dependencyManagement>
@@ -87,6 +88,13 @@
 				<groupId>software.amazon.awssdk</groupId>
 				<artifactId>s3-transfer-manager</artifactId>
 				<version>${awssdk-v2.version}</version>
+				<optional>true</optional>
+			</dependency>
+
+			<dependency>
+				<groupId>software.amazon.awssdk.crt</groupId>
+				<artifactId>aws-crt</artifactId>
+				<version>${aws-crt.version}</version>
 				<optional>true</optional>
 			</dependency>
 
